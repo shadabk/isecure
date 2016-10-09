@@ -1,0 +1,13 @@
+hyper-mode when large variation is detected.
+AI , Machine learning, data set is learnt according to time of day and stuff.
+Auto enable sensor,  master password
+if phone gets stolen, locks itself/ asks for password/ wipes what specified/ clicks snap if password wrong- sends photo
+sends email to id, can track location of stolen device + google services
+checks the PCC moments before a transaction, if too varied, it will ask for some additional security password/ fingerprint
+if phone stolen and uses own identity and specific place, track details of thief
+on-body detection, can detect same person
+
+phone companies can directly integrate functionality in OS.
+
+use of data by other sites.
+chatbot

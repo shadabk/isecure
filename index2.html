@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>inNerve 2k16</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="highcharts.js"></script>
+    <script>
+    $(function () {
+        var myChart = Highcharts.chart('container', {
+            chart: {
+                type: 'line'
+            },
+            title: {
+                text: 'Fruit Consumption'
+            },
+            xAxis: {
+                categories: ['Apples', 'Bananas', 'Oranges']
+            },
+            yAxis: {
+                title: {
+                    text: 'Fruit eaten'
+                }
+            },
+            series: [{
+                name: 'Jane',
+                data: [1, 0, 4, 5, 6, 8, 1, 9]
+            }, {
+                name: 'John',
+                data: [5, 7, 3, 8, 5, 6, 4, 1]
+            }]
+        });
+    });
+    </script>
+  </head>
+  <body>
+    <script>
+    function printresult(data){
+        document.getElementById("here").innerHTML = data["p1"][0]["id"];
+    }
+      window.onload = function() {
+        $.ajax({
+          type: "GET",
+          // dataType: "json",
+          url: "getdata.php",
+          data: {
+            name1 :"shadab",
+            name2 : "parag"
+          },
+          success: function(data){
+              printresult(data);
+          }
+        });
+      }
+    </script>
+<div id="container" style="width:100%; height:400px;"></div>
+<div class="cont">
+  <h1>the real ajax</h1>
+  <p id="here">
+  </p>
+
+</div>
+
+  </body>
+</html>
